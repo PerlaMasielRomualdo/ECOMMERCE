@@ -19,7 +19,7 @@ import { Cart } from './model/cart';
     StoreModule,
     HttpClientModule
   ],
-  providers: [ Cart],
+  providers: [Cart],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

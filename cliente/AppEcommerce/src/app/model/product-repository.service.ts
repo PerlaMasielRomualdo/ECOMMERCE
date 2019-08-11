@@ -41,4 +41,9 @@ export class ProductRepositoryService {
  getScales(): string[] {
    return this.scales;
  }
+
+ getProductById(productCode: string){
+  return this.products.filter((product) =>(product.productCode == productCode));
+  }
+
 }

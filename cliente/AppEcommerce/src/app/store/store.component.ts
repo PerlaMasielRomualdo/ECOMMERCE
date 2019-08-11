@@ -65,4 +65,8 @@ public selectedPage = 1;
     this.cart.addLine(product);
     this.cart.recalculate();
   }
+
+  stop(event: Event){
+    event.stopPropagation();
+  }
 }
