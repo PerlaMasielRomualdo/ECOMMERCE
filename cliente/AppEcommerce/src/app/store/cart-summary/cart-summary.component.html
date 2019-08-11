@@ -1,0 +1,14 @@
+<div class="form-inline pull-xs-right" style="color: white"  >
+    <small>
+        <span *ngIf="cart.itemCount > 0">
+            {{cart.itemCount}} item (s)
+            {{cart.cartPrice | currency: "USD": true: "2.2-2"}}
+        </span>
+        <span *ngIf="cart.itemCount == 0">
+            (empty)
+        </span>
+        <button class="btn btn-warning btn-sm" [disabled]="cart.itemCount == 0">
+            <img  width="25px" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDE5LjI1IDE5LjI1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxOS4yNSAxOS4yNTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPGcgaWQ9IkxheWVyXzFfMTA3XyI+CgkJPGc+CgkJCTxwYXRoIGQ9Ik0xOS4wMDYsMi45N2MtMC4xOTEtMC4yMTktMC40NjYtMC4zNDUtMC43NTYtMC4zNDVINC40MzFMNC4yMzYsMS40NjEgICAgIEM0LjE1NiwwLjk3OSwzLjczOSwwLjYyNSwzLjI1LDAuNjI1SDFjLTAuNTUzLDAtMSwwLjQ0Ny0xLDFzMC40NDcsMSwxLDFoMS40MDNsMS44NiwxMS4xNjRjMC4wMDgsMC4wNDUsMC4wMzEsMC4wODIsMC4wNDUsMC4xMjQgICAgIGMwLjAxNiwwLjA1MywwLjAyOSwwLjEwMywwLjA1NCwwLjE1MWMwLjAzMiwwLjA2NiwwLjA3NSwwLjEyMiwwLjEyLDAuMTc5YzAuMDMxLDAuMDM5LDAuMDU5LDAuMDc4LDAuMDk1LDAuMTEyICAgICBjMC4wNTgsMC4wNTQsMC4xMjUsMC4wOTIsMC4xOTMsMC4xM2MwLjAzOCwwLjAyMSwwLjA3MSwwLjA0OSwwLjExMiwwLjA2NWMwLjExNiwwLjA0NywwLjIzOCwwLjA3NSwwLjM2NywwLjA3NSAgICAgYzAuMDAxLDAsMTEuMDAxLDAsMTEuMDAxLDBjMC41NTMsMCwxLTAuNDQ3LDEtMXMtMC40NDctMS0xLTFINi4wOTdsLTAuMTY2LTFIMTcuMjVjMC40OTgsMCwwLjkyLTAuMzY2LDAuOTktMC44NThsMS03ICAgICBDMTkuMjgxLDMuNDc5LDE5LjE5NSwzLjE4OCwxOS4wMDYsMi45N3ogTTE3LjA5Nyw0LjYyNWwtMC4yODUsMkgxMy4yNXYtMkgxNy4wOTd6IE0xMi4yNSw0LjYyNXYyaC0zdi0ySDEyLjI1eiBNMTIuMjUsNy42MjV2MiAgICAgaC0zdi0ySDEyLjI1eiBNOC4yNSw0LjYyNXYyaC0zYy0wLjA1MywwLTAuMTAxLDAuMDE1LTAuMTQ4LDAuMDNsLTAuMzM4LTIuMDNIOC4yNXogTTUuMjY0LDcuNjI1SDguMjV2Mkg1LjU5N0w1LjI2NCw3LjYyNXogICAgICBNMTMuMjUsOS42MjV2LTJoMy40MThsLTAuMjg1LDJIMTMuMjV6IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxjaXJjbGUgY3g9IjYuNzUiIGN5PSIxNy4xMjUiIHI9IjEuNSIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8Y2lyY2xlIGN4PSIxNS43NSIgY3k9IjE3LjEyNSIgcj0iMS41IiBmaWxsPSIjMDAwMDAwIi8+CgkJPC9nPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+        </button>
+    </small>
+</div>

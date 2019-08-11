@@ -1,0 +1,41 @@
+<app-navigation></app-navigation>
+<div>
+    <div>
+        <table class="table table-dark border-info">
+            <thead>
+                <tr class="border-info">
+                <th class="text-center" colspan="5">Products</th>
+                </tr>
+                <tr>
+                    <th class="border-info">Name</th>
+                    <th class="border-info">Price</th>
+                    <th class="border-info">Quantity</th>
+                    <th class="border-info">Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let l of cartItems; let index = index">
+                  <th>{{l.product.productName}}</th>
+                  <td>{{l.product.MSRP}}</td>
+                  <td>
+              
+                <input (change)="update(l.product,$event.target.value)" type="number" value="{{l.quantity}}" min="1" max="9" step="1"/> 
+                  </td>
+                  <td>{{l.lineTotal}}</td>
+                  <button type="button" class="close" aria-label="Close" (click)="removeLine(index)">
+                    <img width="20px" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCA1MTEuOTkyIDUxMS45OTIiIHdpZHRoPSIxNnB4Ij48cGF0aCBkPSJtNDE1LjQwMjM0NCA0OTUuNDIxODc1LTE1OS40MDYyNS0xNTkuNDEwMTU2LTE1OS40MDYyNSAxNTkuNDEwMTU2Yy0yMi4wOTc2NTYgMjIuMDkzNzUtNTcuOTIxODc1IDIyLjA5Mzc1LTgwLjAxOTUzMiAwLTIyLjA5Mzc1LTIyLjA5NzY1Ni0yMi4wOTM3NS01Ny45MjE4NzUgMC04MC4wMTk1MzFsMTU5LjQxMDE1Ny0xNTkuNDA2MjUtMTU5LjQxMDE1Ny0xNTkuNDA2MjVjLTIyLjA5Mzc1LTIyLjA5NzY1Ni0yMi4wOTM3NS01Ny45MjE4NzUgMC04MC4wMTk1MzIgMjIuMDk3NjU3LTIyLjA5Mzc1IDU3LjkyMTg3Ni0yMi4wOTM3NSA4MC4wMTk1MzIgMGwxNTkuNDA2MjUgMTU5LjQxMDE1NyAxNTkuNDA2MjUtMTU5LjQxMDE1N2MyMi4wOTc2NTYtMjIuMDkzNzUgNTcuOTIxODc1LTIyLjA5Mzc1IDgwLjAxOTUzMSAwIDIyLjA5Mzc1IDIyLjA5NzY1NyAyMi4wOTM3NSA1Ny45MjE4NzYgMCA4MC4wMTk1MzJsLTE1OS40MTAxNTYgMTU5LjQwNjI1IDE1OS40MTAxNTYgMTU5LjQwNjI1YzIyLjA5Mzc1IDIyLjA5NzY1NiAyMi4wOTM3NSA1Ny45MjE4NzUgMCA4MC4wMTk1MzEtMjIuMDk3NjU2IDIyLjA5Mzc1LTU3LjkyMTg3NSAyMi4wOTM3NS04MC4wMTk1MzEgMHptMCAwIiBmaWxsPSIjZTc2ZTU0Ii8+PC9zdmc+Cg==" />
+                  </button>
+                </tr>
+                <td></td>
+                <td></td>
+                <th scope="row">Total</th>
+                <td>{{cart.cartPrice}}</td>
+                <td></td>
+                <tr>
+            
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
